@@ -1,28 +1,9 @@
-// Проверка: строки — анаграммы (одинаковые буквы с одинаковой кратностью)
-const a = "listen";
-const b = "silent";
+// 3.2 — Анаграмма (полное условие: 3_lvl/README.md → раздел 3.2)
+const s = "listen";
+const t = "silent";
 
-function isAnagram(a, b) {
-  if (a.length !== b.length) {
-    return false;
-  }
-
-  const count = {};
-
-  for (let i = 0; i < a.length; i++) {
-    const c = a[i];
-    count[c] = (count[c] || 0) + 1;
-  }
-
-  for (let i = 0; i < b.length; i++) {
-    const c = b[i];
-    if (!count[c]) {
-      return false;
-    }
-    count[c]--;
-  }
-
-  return true;
+function isAnagram(s, t) {
+  // твой код
 }
 
-console.log(`Анаграммы "${a}" и "${b}":`, isAnagram(a, b));
+console.log(isAnagram(s, t));

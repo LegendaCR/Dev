@@ -1,23 +1,10 @@
-// Удалить дубликаты из отсортированного массива (in-place), вернуть новую длину
-let arr = [0, 0, 1, 1, 1, 2, 2, 3];
+// 3.4 — Уникальные в отсортированном массиве, in-place (полное условие: 3_lvl/README.md → раздел 3.4)
+let nums = [0, 0, 1, 1, 1, 2, 2, 3];
 
-function removeDuplicatesSorted(arr) {
-  if (arr.length === 0) {
-    return 0;
-  }
-
-  let write = 1;
-
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] !== arr[write - 1]) {
-      arr[write] = arr[i];
-      write++;
-    }
-  }
-
-  return write;
+function removeDuplicatesSorted(nums) {
+  // твой код
 }
 
-const newLen = removeDuplicatesSorted(arr);
-console.log("Длина без дубликатов:", newLen);
-console.log("Префикс массива:", arr.slice(0, newLen));
+const k = removeDuplicatesSorted(nums);
+console.log("k =", k);
+console.log("префикс:", nums.slice(0, k));

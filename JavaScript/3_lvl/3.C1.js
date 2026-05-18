@@ -1,22 +1,9 @@
-// Два числа в массиве дают сумму target — вернуть индексы (ровно одно решение)
+// 3.C1 — Два числа к цели, вернуть индексы (полное условие: 3_lvl/README.md → раздел 3.C1)
 const nums = [2, 7, 11, 15];
 const target = 9;
 
 function twoSum(nums, target) {
-  const indexByValue = {};
-
-  for (let i = 0; i < nums.length; i++) {
-    const need = target - nums[i];
-
-    if (indexByValue[need] !== undefined) {
-      return [indexByValue[need], i];
-    }
-
-    indexByValue[nums[i]] = i;
-  }
-
-  return null;
+  // твой код
 }
 
-const pair = twoSum(nums, target);
-console.log(`Индексы для суммы ${target}:`, pair);
+console.log(twoSum(nums, target));

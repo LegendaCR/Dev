@@ -1,16 +1,8 @@
-// Частота каждого числа в массиве (объект как «карта» счётчиков)
-const arr = [1, 2, 2, 3, 1, 3, 3];
+// 3.1 — Частоты чисел в массиве (полное условие: 3_lvl/README.md → раздел 3.1)
+const nums = [1, 2, 2, 3, 1, 3, 3];
 
-function frequencyMap(arr) {
-  const counts = {};
-
-  for (let i = 0; i < arr.length; i++) {
-    const n = arr[i];
-    counts[n] = (counts[n] || 0) + 1;
-  }
-
-  return counts;
+function frequencyMap(nums) {
+  // твой код
 }
 
-const freq = frequencyMap(arr);
-console.log("Частоты:", freq);
+console.log(frequencyMap(nums));
